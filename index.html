@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Pequeño videojuego 3D en primera persona.">
+    <meta name="keywords" content="estudiantes, ufg, videojuegos">
+    <meta name="author" content="Marvin Raydel Rios Aguilar">
+    <meta name="copyright" content="2026 MRRA">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videojuego en Primera Persona</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div id="blocker">
+        <div id="instructions">
+            <div id="playButton">
+                ¡JUGAR!
+                <p>
+                    ESC - Menu
+                    <br />
+                    Flechas W A S D - Movimiento
+                    <br />
+                    Click Izquierdo - Disparar
+                    <br />
+                    Barra Espaciadora - Disparar
+                    <br />
+                    M - Reproducir/ Pausar Audio
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <img id="crosshair" src="media/reticle.png" alt="Crosshair">
+
+    <script src="https://cdn.jsdelivr.net/npm/three@latest/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@latest/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@latest/examples/js/controls/PointerLockControls.js"></script>
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
