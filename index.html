@@ -10,6 +10,7 @@
     <title>Videojuego en Primera Persona</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
     
@@ -38,5 +39,10 @@
     <script src="https://cdn.jsdelivr.net/npm/three@latest/examples/js/controls/OrbitControls.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@latest/examples/js/controls/PointerLockControls.js"></script>
     <script type="module" src="js/script.js"></script>
+    <script>
+        if('serviceWorker' in navigator){
+            navigator.serviceWorker.register('sw.js',{scope: './'});
+        }
+    </script>
 </body>
 </html>
